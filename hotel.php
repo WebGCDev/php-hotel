@@ -57,6 +57,32 @@ $hotels = [
 </head>
 
 <body>
+    <div class="container">
+        <table class="table table-info table-striped table-borderless">
+            <thead>
+
+                <tr>
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>PARKING</th>
+                    <th>VOTE</th>
+                    <th>DISTANCE TO CENTER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($hotels as $hotel) { ?>
+                    <tr>
+                        <td scope="row"><?= $hotel['name'] ?></td>
+                        <td scope="row"><?= $hotel['description'] ?></td>
+                        <td scope="row"><?= $hotel['parking'] ?></td>
+                        <td scope="row"><?= $hotel['vote'] ?></td>
+                        <td scope="row"><?= $hotel['distance_to_center'] ?></td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+
+        </table>
+    </div>
 
 </body>
 
